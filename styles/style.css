@@ -17,4 +17,83 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  background-image: var(--bg-image);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 696px) {
+  .header,
+  .main {
+    max-width: 100vw;
+  }
+}
+
+.header {
+  font-family: var(--PressStart);
+  background-color: var(--bg-color);
+  margin-block-start: 102px;
+  border: 2px solid currentColor;
+  width: 696px;
+  height: 38.5vh;
+  display: grid;
+  grid-template-rows: 3.5fr 1fr 2fr;
+  gap: 10px;
+}
+
+.header_title {
+  text-transform: uppercase;
+  font-size: clamp(3.0625rem, 1.921rem + 4.9231vw, 4.0625rem);
+  align-self: end;
+  justify-self: center;
+}
+
+.header_secondary_title {
+  font-size: clamp(0.875rem, 0.2329rem + 2.7692vw, 1.4375rem);
+  justify-self: center;
+  align-self: center;
+}
+
+.theme-menu {
+  justify-self: center;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.main {
+  font-family: var(--Inter);
+  margin-block-start: 104px;
+  width: 696px;
+  display: grid;
+  gap: 54px;
+}
+
+.post_card {
+  border: 2px solid currentColor;
+  background-color: var(--bg-color);
+  height: 100vh;
+}
+
+.post_title {
+  padding: 3px 10px;
+}
+
+.post_figure {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.post_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
