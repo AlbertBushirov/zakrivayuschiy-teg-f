@@ -32,7 +32,7 @@ a {
 
 button,
 input {
-  color: currentColor;
+  color: var(--font-color);
   font-family: inherit;
   font-size: inherit;
   padding: 0px;
@@ -44,6 +44,10 @@ input {
 ul,
 ol {
   list-style: none;
+}
+
+figure {
+  margin: 0px;
 }
 
 .visually-hidden {

@@ -4,9 +4,13 @@ fill="currentColor"
 xmlns="http://www.w3.org/2000/svg">
 
 <style>
+:root {
+    --default-fill: rgba(0, 0, 0, 1);
+}
+
 @mefia (prefers-color-sheme: dark) {
     :root {
-        fill: green;
+     --default-fill: rgba(0, 204, 20, 1);
     }
 }
 </style>

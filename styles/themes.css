@@ -7,19 +7,27 @@
 :root.theme-light {
   --bg-color: rgb(255, 255, 255);
   --font-color: rgb(0, 0, 0);
-  --bg-image: url(../svg/background.svg);
+  --bg-image_vertical: #d3d3d3;
+  --bg-image_horizontal: #e7e7e7;
+  --bg-image-linear: #1a1a1a;
+  --heart-contur: rgb(0, 0, 0);
 }
 
 :root.theme-dark {
   --bg-color: rgb(0, 0, 0);
   --font-color: rgb(0, 204, 20);
-  --bg-image: url(../svg/background-dark.svg);
+  --bg-image_vertical: #000;
+  --bg-image_horizontal: #007f0c;
+  --bg-image-linear: #004306;
+  --heart-contur: rgb(0, 204, 20);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: rgb(0, 0, 0);
     --font-color: rgb(0, 204, 20);
-    --bg-image: url(../svg/background-dark.svg);
+    --bg-image_vertical: #000;
+    --bg-image_horizontal: #007f0c;
+    --heart-contur: rgb(0, 204, 20);
   }
 }
