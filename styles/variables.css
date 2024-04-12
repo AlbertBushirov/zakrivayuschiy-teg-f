@@ -1,11 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --Inter: "Inter-Variable", monospace;
-  --PressStart: "PressStart2P", monospace;
+  --main_font: "Inter-Variable", monospace;
+  --title_font: "PressStart2P", monospace;
   --bg-color: rgb(255, 255, 255);
   --font-color: rgb(0, 0, 0);
   --heart-animation: #ff0000;
   --heart-contur: rgb(0, 0, 0);
+  --heart-filling: rgb(#ff0000);
   --bg-image_vertical: #d3d3d3;
   --bg-image_horizontal: #e7e7e7;
   --bg-image-linear: #1a1a1a;

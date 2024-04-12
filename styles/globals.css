@@ -50,6 +50,16 @@ figure {
   margin: 0px;
 }
 
+:hover,
+:disabled,
+:focus,
+:focus-visible,
+:active,
+:focus::after {
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
