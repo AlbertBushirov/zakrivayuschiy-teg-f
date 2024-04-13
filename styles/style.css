@@ -60,11 +60,11 @@
   border: 2px solid currentColor;
   width: 696px;
   display: grid;
-  grid-template-rows: 4.5fr 1fr 2.1fr;
+  grid-template-rows: 4.5fr 0.9fr 2.1fr;
   gap: 10px;
 
   @media (width <= 375px) {
-    grid-template-rows: 4fr 1fr 2.3fr;
+    grid-template-rows: 4.1fr 1fr 2.3fr;
   }
 }
 
@@ -85,7 +85,10 @@
 .theme-menu {
   justify-self: center;
   margin-inline-start: 20px;
-  margin-block-end: 25px;
+  margin-block-end: 18px;
+  @media (width <= 375px) {
+    margin-block-end: 16px;
+  }
 }
 
 .theme-menu__list {
@@ -138,7 +141,7 @@
   margin-block-start: 104px;
   width: 696px;
   display: grid;
-  gap: 54px;
+  gap: 50px;
   @media (width <= 375px) {
     margin-block-start: 100px;
   }
@@ -151,14 +154,16 @@
 }
 
 .post_title {
-  font-size: 20px;
-  font-weight: 600;
-  padding: 3px 0px 0px 10px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 6px 0px 0px 10px;
   align-self: center;
+  margin-block-end: 3px;
 }
 
 .figure {
   position: relative;
+  border-block: 2px solid var(--font-color);
 }
 
 .figure_text {
@@ -167,8 +172,8 @@
   text-transform: uppercase;
   color: var(--font-color);
   position: absolute;
-  inset-inline-end: 25px;
-  inset-block-start: 25px;
+  inset-inline-end: 23px;
+  inset-block-start: 29px;
   opacity: 0.5;
   z-index: 1;
   text-shadow: -1px 0 var(--bg-color), 0 1px var(--bg-color),
@@ -196,10 +201,10 @@
 }
 
 .post_img {
+  height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
-  border-block: 2px solid var(--font-color);
 }
 
 .saturate {
@@ -231,9 +236,18 @@
 }
 
 .post_text {
+  margin-block-start: 5px;
   font-size: 18px;
   padding: 25px;
   line-height: 21px;
+  @media (width <= 375px) {
+    margin-block-start: 1px;
+  }
+}
+
+.post_text_private {
+  font-size: 18px;
+  padding-inline: 25px;
 }
 
 .post_like {
@@ -241,9 +255,9 @@
   font-size: 14px;
   align-self: end;
   justify-self: end;
-  margin: 0px 25px 25px;
+  margin: 26px 25px 25px;
   display: flex;
-  gap: 10px;
+  gap: 3px;
 }
 
 .card__icon-button {
@@ -335,7 +349,8 @@
   display: block;
   width: 0%;
   height: 100%;
-  background-color: var(--font-color);
+  background-color: var(--bg-color);
+  mix-blend-mode: difference;
 }
 
 .button:hover::before {
@@ -355,12 +370,19 @@
 
 .button_floppy {
   width: 21px;
+  @media (width <= 375px) {
+    width: 28px;
+  }
 }
 
 .dialog {
   width: clamp(341px, 357px, 357px);
   border: 2px solid var(--font-color);
   background-color: var(--bg-color);
+  @media (width <= 375px) {
+    height: 195px;
+    width: 341px;
+  }
 }
 
 .dialog::backdrop {
@@ -397,6 +419,9 @@
   grid-column-end: 3;
   justify-self: center;
   text-transform: uppercase;
+  @media (width <= 375px) {
+    width: 257px;
+  }
 }
 
 .save {
@@ -413,4 +438,10 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+
+  @media (width <= 375px) {
+    flex-direction: column;
+    height: 80px;
+    width: 306px;
+  }
 }

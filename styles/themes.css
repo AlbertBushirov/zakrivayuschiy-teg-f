@@ -11,6 +11,7 @@
   --bg-image_horizontal: #e7e7e7;
   --bg-image-linear: #1a1a1a;
   --heart-contur: rgb(0, 0, 0);
+  --heart-filling: rgb(#ff0000);
 }
 
 :root.theme-dark {
@@ -20,6 +21,7 @@
   --bg-image_horizontal: #007f0c;
   --bg-image-linear: #004306;
   --heart-contur: rgb(0, 204, 20);
+  --heart-filling: rgb(0, 204, 20);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,5 +31,6 @@
     --bg-image_vertical: #000;
     --bg-image_horizontal: #007f0c;
     --heart-contur: rgb(0, 204, 20);
+    --heart-filling: rgb(0, 204, 20);
   }
 }
