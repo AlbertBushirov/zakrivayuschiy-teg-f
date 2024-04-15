@@ -56,7 +56,6 @@ figure {
 :focus-visible,
 :active,
 :focus::after {
-  transition: all 0.3s ease-in-out;
   outline: none;
 }
 
