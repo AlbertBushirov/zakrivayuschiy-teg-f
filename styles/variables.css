@@ -2,6 +2,8 @@
 :root {
   --main_font: "Inter-Variable", monospace;
   --title_font: "PressStart2P", monospace;
+  --weight_main: 400;
+  --weight_title: 700;
   --bg-color: rgb(255, 255, 255);
   --font-color: rgb(0, 0, 0);
   --heart-animation: #ff0000;
