@@ -4,13 +4,13 @@ fill="currentColor"
 xmlns="http://www.w3.org/2000/svg">
 
 <style>
-:root {
-    --default-fill: rgba(0, 0, 0, 1);
-}
+ path {
+      fill: black;
+    }
 
 @mefia (prefers-color-sheme: dark) {
-    :root {
-     --default-fill: rgba(0, 204, 20, 1);
+       path {
+        fill: #00CC14;
     }
 }
 </style>
