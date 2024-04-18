@@ -302,7 +302,7 @@
 
 .like-icon:hover .core {
   fill: var(--heart-contur);
-  transition: linear 0.3s linear 0.03s;
+  transition: linear 0.3s linear;
 }
 
 .like-icon:hover .main-body {
@@ -313,7 +313,7 @@
 
 .like-icon:active .core {
   fill: var(--heart-animation);
-  transition: fill 0.3s linear 0.03s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:active .main-body {
@@ -324,17 +324,21 @@
 
 .like-icon.is-liked .core {
   fill: var(--heart-animation);
-  transition: fill 0.3s linear 0.05s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-animation);
-  transition: 0.3s linear;
+  transition: 0.3s 0.05s linear;
+}
+
+.like-icon .contour {
+  transition: 0.1s linear;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--heart-animation);
-  transition: 0.1s linear;
+  transition: 0.3s 0.06s linear;
 }
 
 .like-icon.is-liked {
@@ -381,10 +385,6 @@
 
 .button:hover::before {
   transform: scaleX(1);
-}
-
-.button:hover {
-  color: var(--bg-color);
 }
 
 .decorate {

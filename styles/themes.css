@@ -8,6 +8,7 @@
   --bg-color: rgb(255, 255, 255);
   --font-color: rgb(0, 0, 0);
   --weight_title: 700;
+  --weight_main: 400;
   --bg-image_vertical: #d3d3d3;
   --bg-image_horizontal: #e7e7e7;
   --bg-image-linear: #1a1a1a;
@@ -20,6 +21,7 @@
   --bg-color: rgb(0, 0, 0);
   --font-color: rgb(0, 204, 20);
   --weight_title: 785;
+  --weight_main: 465;
   --bg-image_vertical: #000;
   --bg-image_horizontal: #007f0c;
   --bg-image-linear: #004306;
@@ -33,6 +35,7 @@
     --bg-color: rgb(0, 0, 0);
     --font-color: rgb(0, 204, 20);
     --weight_title: 785;
+    --weight_main: 465;
     --bg-image_vertical: #000;
     --bg-image_horizontal: #007f0c;
     --bg-image-linear: #004306;
